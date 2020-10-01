@@ -6,7 +6,7 @@ subData["Sub_metering_1"]=as.numeric(subData$Sub_metering_1)
 subData["Sub_metering_2"]=as.numeric(subData$Sub_metering_2)
 subData["Sub_metering_3"]=as.numeric(subData$Sub_metering_3)
 
-datetime_new = strptime(paste(subData$Date,subData$Time,sep=" "),format ="%d/%m/%y %H:%M:%S" )
+datetime = strptime(paste(subData$Date,subData$Time,sep=" "),format ="%d/%m/%y %H:%M:%S" )
 
 
 png("plot3.png", width=480, height=480)
